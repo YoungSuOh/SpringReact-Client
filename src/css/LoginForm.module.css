@@ -1,0 +1,83 @@
+/* SpringReact/src/css/LoignForm.module.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.main {
+    margin: 100px auto;
+    text-align: center;
+    width: 30%;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.main table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.main table th {
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.main table td {
+    padding-bottom: 10px;
+}
+
+.main input[type="text"],
+.main input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.main input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.main button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.main button:hover {
+    background-color: #45a049;
+}
+
+.main #idDiv,
+.main #pwdDiv {
+    color: red;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.main #loginDiv {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 12px;
+}

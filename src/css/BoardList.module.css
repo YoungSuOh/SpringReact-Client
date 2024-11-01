@@ -1,0 +1,55 @@
+/* SpringReact/src/css/BoardList.module.css */
+.BoardList {
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.BoardList form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.BoardList table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.BoardList table a {
+    text-decoration: none; 
+    color: black;
+}
+
+.BoardList table a:hover {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+.BoardList table th, 
+.BoardList table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.BoardList table td:nth-child(2) { /* 제목만 왼쪽 정렬 */
+    text-align: left;
+}
+
+.BoardList table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+.BoardList table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.BoardList form {
+    display: inline-block;
+    margin-top: 10px;
+}

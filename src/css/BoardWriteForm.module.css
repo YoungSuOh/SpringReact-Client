@@ -1,0 +1,85 @@
+.BoardWriteForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin: 50px auto;
+    width: 80%;
+    max-width: 700px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+    border-radius: 12px; 
+    padding: 10px;
+    background-color: #ffffff; 
+}
+
+.BoardWriteForm table {
+    border-collapse: separate;
+    border-spacing: 15px; 
+    width: 90%;
+}
+
+.BoardWriteForm table th {
+    width: 25%; 
+    padding: 12px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.BoardWriteForm table td {
+    padding: 12px;
+}
+
+.BoardWriteForm input[type="text"], 
+.BoardWriteForm textarea {
+    width: 100%; 
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.BoardWriteForm input[type="text"]:focus,
+.BoardWriteForm textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6); 
+}
+
+.BoardWriteForm .btnDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.BoardWriteForm button {
+    padding: 12px 24px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px; /* 버튼 텍스트 크기 증가 */
+}
+
+.BoardWriteForm button:hover {
+    background-color: #45a049;
+}
+
+.BoardWriteForm button:focus {
+    border-color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6); 
+}
+
+#subjectDiv, #contentDiv {
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 8px; /* 경고 메시지 간격 조정 */
+}
