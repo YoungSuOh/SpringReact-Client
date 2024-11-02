@@ -13,13 +13,16 @@ const BoardView = () => {
     useEffect(() => {
         // seq에 해당하는 게시물 상세 정보 요청
         axios
-            .get(`http://localhost:8080/SpringReact/board/boardView?seq=${seq}`)
+            .get(`http://211.188.49.199:8090/SpringReact/board/boardView?seq=${seq}`, {
+                withCredentials: true  // 쿠키 등 인증 정보 포함
+            })
             .then((response) => {
                 console.log(response.data);
                 setBoard(response.data); // 게시물 데이터 설정
             })
             .catch((error) => console.error('게시물 조회 실패:', error));
     }, [seq]);
+    
 
     // 데이터가 없을 때 로딩 메시지 표시
     if (!board) return <p>Loading...</p>;

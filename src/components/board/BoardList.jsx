@@ -7,16 +7,17 @@ import { Link } from 'react-router-dom';
 const BoardList = () => {
     const [list, setList] = useState([]);
 
-    useEffect(() => {
-        axios
-            .get('http://localhost:8080/SpringReact/board/boardList')
-            .then(response => {
-                console.log(response.data);
-                setList(response.data);
-            })
-            .catch(error => console.error('데이터 가져오기 실패:', error)); 
-    }, []); 
-
+        useEffect(() => {
+            axios
+                .get('http://211.188.49.199:8090/SpringReact/board/boardList', {
+                    withCredentials: true  // 쿠키를 포함한 인증 정보를 전송
+                })
+                .then(response => {
+                    console.log(response.data);
+                    setList(response.data);
+                })
+                .catch(error => console.error('데이터 가져오기 실패:', error)); 
+        }, []);
     return (
         <div className={styles.BoardList}>
             <h1>게시물 목록</h1>

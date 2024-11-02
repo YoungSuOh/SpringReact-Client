@@ -14,7 +14,7 @@ const LoginForm = () => {
 
     const navigate = useNavigate();
 
-    const onLoginSubmit = (e)=>{
+    const onLoginSubmit = (e) => {
         e.preventDefault();
 
         setId('');
@@ -25,9 +25,9 @@ const LoginForm = () => {
 
         axios
             .post(
-                'http://localhost:8080/SpringReact/member/login',
+                'http://211.188.49.199:8090/SpringReact/member/login', // 프로토콜 추가
                 { id, pwd },
-                { withCredentials: true }
+                { withCredentials: true }  // 인증 정보를 포함하여 요청
             )
             .then(response => {
                 console.log(response.data);
@@ -37,7 +37,7 @@ const LoginForm = () => {
             })
             .catch(error => console.error('로그인 요청 중 오류 발생:', error));
     }
-    
+
     return (
         <div className={styles.main}>
             <h2>로그인</h2>
