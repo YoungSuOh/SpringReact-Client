@@ -1,8 +1,11 @@
-# React + Vite
+<h1>React 배포</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+<h2>배포 구조</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image (1)](https://github.com/user-attachments/assets/d5882725-d133-4d93-90e9-f07c7d6e3a81)
+
+
+<h2>배포 결과</h2>
+
+![image](https://github.com/user-attachments/assets/8e0592b5-25d5-491a-a5f2-1851d844171f)
