@@ -13,7 +13,7 @@ const BoardView = () => {
     useEffect(() => {
         // seq에 해당하는 게시물 상세 정보 요청
         axios
-            .get(`http://211.188.49.199:8090/SpringReact/board/boardView?seq=${seq}`, {
+            .get(`https://211.188.49.199:8090/SpringReact/board/boardView?seq=${seq}`, {
                 withCredentials: true  // 쿠키 등 인증 정보 포함
             })
             .then((response) => {
