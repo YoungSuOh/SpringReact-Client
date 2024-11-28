@@ -9,7 +9,7 @@ const BoardList = () => {
 
         useEffect(() => {
             axios
-                .get('https://211.188.49.199:8090/SpringReact/board/boardList', {
+                .get('http://211.188.49.199:8090/SpringReact/board/boardList', {
                     withCredentials: true  // 쿠키를 포함한 인증 정보를 전송
                 })
                 .then(response => {
