@@ -25,7 +25,7 @@ const LoginForm = () => {
 
         axios
             .post(
-                'https://211.188.49.199:8090/SpringReact/member/login', // 프로토콜 추가
+                'http://211.188.49.199:8090/SpringReact/member/login', // 프로토콜 추가
                 { id, pwd },
                 { withCredentials: true }  // 인증 정보를 포함하여 요청
             )
