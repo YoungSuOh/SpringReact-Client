@@ -19,11 +19,17 @@ RUN npm run build
 # 실제 배포용 이미지 설정
 FROM nginx:alpine
 
+# Nginx 설정 파일 복사
+COPY nginx.conf /etc/nginx/nginx.conf
+
+# Certbot SSL 인증서를 위한 디렉토리 생성
+RUN mkdir -p /etc/letsencrypt/live && mkdir -p /etc/letsencrypt/archive
+
 # 빌드 결과물을 Nginx 디렉토리에 복사
 COPY --from=build /app/dist /usr/share/nginx/html
 
-# 80번 포트 노출
-EXPOSE 80
+# 80번, 443번 포트 노출
+EXPOSE 80 443
 
 # Nginx 실행
 CMD ["nginx", "-g", "daemon off;"]
