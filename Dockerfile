@@ -19,8 +19,9 @@ RUN npm run build
 # 실제 배포용 이미지 설정
 FROM nginx:alpine
 
-# Nginx 설정 파일 복사
+# Nginx 설정 복사
 COPY nginx.conf /etc/nginx/nginx.conf
+COPY default.conf /etc/nginx/conf.d/default.conf
 
 # Certbot SSL 인증서를 위한 디렉토리 생성
 RUN mkdir -p /etc/letsencrypt/live && mkdir -p /etc/letsencrypt/archive
